@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f76efd1c-4978-4dca-b11e-5ca266f9544f" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Профессиональная верстка" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectId" id="1PrfyW2fp8gFhPWvIUyV1ay0vpW" />
+  <component name="PropertiesComponent">
+    <property name="NewWatcherDialog.advanced.open" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="C:/ProgramData/chocolatey/bin/sass.exe" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Geekbrains\Профессиональная верстка" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f76efd1c-4978-4dca-b11e-5ca266f9544f" name="Default Changelist" comment="" />
+      <created>1566637390762</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566637390762</updated>
+      <workItem from="1566637391986" duration="616000" />
+      <workItem from="1566643962509" duration="68000" />
+      <workItem from="1566644896959" duration="37000" />
+      <workItem from="1566645639265" duration="1201000" />
+      <workItem from="1566650336136" duration="3235000" />
+      <workItem from="1566681623595" duration="29323000" />
+      <workItem from="1567664557905" duration="2034000" />
+      <workItem from="1567676667864" duration="16175000" />
+      <workItem from="1567702416441" duration="81000" />
+      <workItem from="1567702537155" duration="40000" />
+      <workItem from="1567702594080" duration="165000" />
+      <workItem from="1567702776128" duration="233000" />
+      <workItem from="1567703030818" duration="1455000" />
+      <workItem from="1567704684756" duration="20000" />
+      <workItem from="1567704721656" duration="9989000" />
+      <workItem from="1567786986405" duration="124000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
