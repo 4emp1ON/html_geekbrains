@@ -1257,4 +1257,287 @@ footer h2 {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.product_content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 60px;
+}
+
+.product_content h4 {
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+.vertical_line {
+  width: 5px;
+  height: 37px;
+  background-color: #ef5b70;
+}
+
+.category_wrapper {
+  width: 243px;
+  height: 37px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 5px solid #ef5b70;
+  border-bottom: 1px solid #ebebeb;
+  margin-bottom: 10px;
+}
+
+.category_wrapper:hover {
+  cursor: pointer;
+}
+
+.category_icon {
+  color: #ef5b70;
+  font-family: FontAwesome;
+}
+
+.category_icon::after {
+  content: "\f0d8";
+}
+
+details[open] .category_icon::after {
+  content: "\f0d7";
+}
+
+.category_name {
+  margin-left: 11px;
+  color: #ef5b70;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.product_content_right_side {
+  width: 100%;
+  margin-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product_content_right_side .item {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.product_content_menu_items {
+  margin: 0 0 30px 12px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 33px;
+}
+
+.goods_custom {
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.goods_custom_trending, .goods_custom_size, .goods_custom_price {
+  width: calc(843px/3);
+}
+
+.goods_custom_trending_selector, .goods_custom_size_selector, .goods_custom_price_selector {
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.goods_custom_trending_selector li, .goods_custom_size_selector li, .goods_custom_price_selector li {
+  margin-top: 10px;
+}
+
+.goods_custom_trending_selector li {
+  border-right: 1px solid #dfdfdf;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.goods_custom_trending_selector li:nth-child(3n) {
+  border-right: none;
+}
+
+.goods_custom_trending_selector li:nth-child(3n-2) {
+  padding-left: 0;
+}
+
+.product_content input {
+  width: 13px;
+  height: 13px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+}
+
+.product_content input[type="range"] {
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.goods_custom_size_selector {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.goods_custom_size_selector li {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.goods_custom_size_selector label {
+  margin-left: 9px;
+  margin-right: auto;
+}
+
+.price_range {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.goods_custom_price_selector {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.goods_sorting {
+  margin: 40px 0;
+  width: 100%;
+  height: 50px;
+  background-color: #f3f3f3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort_wrapper {
+  margin-left: 10px;
+  border: 1px solid #ebebeb;
+  background-color: #ffffff;
+  padding: 0 10px 0 10px;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort_wrapper label {
+  border-right: 1px solid #ebebeb;
+  padding-right: 10px;
+  margin-right: 10px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sort_wrapper select {
+  border: none;
+  color: #6f6e6e;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product_content_goods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
 /*# sourceMappingURL=style.css.map */

@@ -899,3 +899,180 @@ footer h2
     display: flex
     flex-direction: row
     justify-content: center
+
+.product_content
+  display: flex
+  flex-direction: row
+  margin-top: 60px
+  // justify-content: space-between
+  & h4
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+
+details summary::-webkit-details-marker
+  display: none
+
+.vertical_line
+  width: 5px
+  height: 37px
+  background-color: #ef5b70
+
+.category_wrapper
+  width: 243px
+  height: 37px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+  border-left: 5px solid #ef5b70
+  border-bottom: 1px solid #ebebeb
+  margin-bottom: 10px
+  &:hover
+    cursor: pointer
+
+.category_icon
+  // margin-left: auto
+  color: #ef5b70
+  font-family: FontAwesome
+  &::after
+    content: "\f0d8"
+
+details[open] .category_icon::after
+  content: "\f0d7"
+
+.category_name
+  margin-left: 11px
+  color: #ef5b70
+  font-size: 14px
+  font-weight: 700
+  line-height: 20px
+  text-transform: uppercase
+
+.product_content_right_side
+  width: 100%
+  margin-left: 50px
+  display: flex
+  flex-direction: column
+  & .item
+    margin-top: 0
+    margin-bottom: 50px
+
+
+.product_content_menu_items
+  margin: 0 0 30px 12px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  line-height: 33px
+
+.goods_custom
+  width: auto
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  &_trending,
+  &_size,
+  &_price
+    width: calc(843px/3)
+    &_selector
+      margin-top: 15px
+      display: flex
+      flex-flow: row wrap
+      justify-content: stretch
+      color: #6f6e6e
+      font-size: 14px
+      font-weight: 400
+      line-height: 14px
+      & li
+        margin-top: 10px
+        // border-right: 1px solid #dfdfdf
+        // width: 32%
+
+
+// .goods_custom_trending_selector li::after
+//   content: "|"
+//   margin-left: 15px
+//   margin-right: 15px
+
+.goods_custom_trending_selector li
+  border-right: 1px solid #dfdfdf
+  padding-left: 20px
+  padding-right: 20px
+
+  &:nth-child(3n)
+    border-right: none
+
+  &:nth-child(3n-2)
+    padding-left: 0
+
+.product_content input
+  width: 13px
+  height: 13px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  &[type="range"]
+    width: 100%
+    background-color: #f0f0f0
+
+.goods_custom_size_selector
+  flex-grow: 1
+  & li
+    flex-basis: 25%
+  & label
+    margin-left: 9px
+    margin-right: auto
+
+.price_range
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  flex-wrap: wrap
+  margin-top: 10px
+  
+.goods_custom_price_selector
+  width: 100%
+  display: flex
+  flex-direction: column
+  flex-basis: 100%
+
+.goods_sorting
+  margin: 40px 0
+  width: 100%
+  height: 50px
+  background-color: #f3f3f3
+  display: flex
+  flex-direction: row
+  align-items: center
+.sort_wrapper
+  margin-left: 10px
+  border: 1px solid #ebebeb
+  background-color: #ffffff
+  padding: 0 10px 0 10px
+  color: #6f6e6e
+  font-size: 14px
+  font-weight: 400
+  height: 30px
+  display: flex
+  flex-direction: row
+  align-items: center
+  & label
+    border-right: 1px solid #ebebeb
+    padding-right: 10px
+    margin-right: 10px
+    height: 100%
+    display: flex
+    align-items: center
+
+  & select
+    border: none
+    color: #6f6e6e
+    font-size: 14px
+    font-weight: 400
+
+.product_content_goods
+  display: flex
+  flex-flow: row wrap
+  justify-content: space-between
