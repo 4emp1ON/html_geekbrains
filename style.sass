@@ -144,9 +144,6 @@ h3
   &-white
     margin-right: 8px
 
-.cart:hover .cart_drop
-  display: flex
-  background-color: red
 
 .menu
   display: flex
@@ -849,6 +846,7 @@ footer h2
         font-size: 13px
         font-weight: 400
         padding-left: 15px
+
         &::placeholder
           font-size: 13px
           font-weight: 400
@@ -860,11 +858,13 @@ footer h2
         font-size: 14px
         font-weight: 900
         text-transform: uppercase
+
       &_size_header
         color: #2f2f2f
         font-size: 14px
         font-weight: 900
         text-transform: uppercase
+
       &_quantity_header
         color: #2f2f2f
         font-size: 14px
@@ -934,6 +934,7 @@ details summary::-webkit-details-marker
   border-left: 5px solid #ef5b70
   border-bottom: 1px solid #ebebeb
   margin-bottom: 10px
+
   &:hover
     cursor: pointer
 
@@ -941,6 +942,7 @@ details summary::-webkit-details-marker
   // margin-left: auto
   color: #ef5b70
   font-family: FontAwesome
+
   &::after
     content: "\f0d8"
 
@@ -960,6 +962,7 @@ details[open] .category_icon::after
   margin-left: 50px
   display: flex
   flex-direction: column
+
   & .item
     margin-top: 0
     margin-bottom: 50px
@@ -977,10 +980,12 @@ details[open] .category_icon::after
   display: flex
   flex-direction: row
   justify-content: space-between
+
   &_trending,
   &_size,
   &_price
-    width: calc(843px/3)
+    width: calc(843px / 3)
+
     &_selector
       margin-top: 15px
       display: flex
@@ -990,10 +995,11 @@ details[open] .category_icon::after
       font-size: 14px
       font-weight: 400
       line-height: 14px
+
       & li
         margin-top: 10px
-        // border-right: 1px solid #dfdfdf
-        // width: 32%
+// border-right: 1px solid #dfdfdf
+// width: 32%
 
 
 // .goods_custom_trending_selector li::after
@@ -1017,14 +1023,17 @@ details[open] .category_icon::after
   height: 13px
   border: 1px solid #ebebeb
   background-color: #ffffff
+
   &[type="range"]
     width: 100%
     background-color: #f0f0f0
 
 .goods_custom_size_selector
   flex-grow: 1
+
   & li
     flex-basis: 25%
+
   & label
     margin-left: 9px
     margin-right: auto
@@ -1035,7 +1044,7 @@ details[open] .category_icon::after
   justify-content: space-between
   flex-wrap: wrap
   margin-top: 10px
-  
+
 .goods_custom_price_selector
   width: 100%
   display: flex
@@ -1050,6 +1059,7 @@ details[open] .category_icon::after
   display: flex
   flex-direction: row
   align-items: center
+
 .sort_wrapper
   margin-left: 10px
   border: 1px solid #ebebeb
@@ -1062,6 +1072,7 @@ details[open] .category_icon::after
   display: flex
   flex-direction: row
   align-items: center
+
   & label
     border-right: 1px solid #ebebeb
     padding-right: 10px
@@ -1087,7 +1098,7 @@ details[open] .category_icon::after
   justify-content: space-between
 
 .page-switcher
-  width : 260px
+  width: 260px
   display: flex
   flex-direction: row
   justify-content: space-evenly
@@ -1097,8 +1108,10 @@ details[open] .category_icon::after
   padding-bottom: 12px
   padding-top: 11px
   margin-bottom: 110px
+
   & a
     color: #aaaaaa
+
     &:hover
       color: #ef5b70
 
@@ -1125,9 +1138,219 @@ details[open] .category_icon::after
 .benefit__product-page
   padding: 0
   flex-basis: 20%
+
   & ul
     display: flex
     flex-direction: column
     justify-content: center
     align-items: center
 
+.shopping-cart
+  width: 100%
+
+  & thead
+    color: #222222
+    font-size: 13px
+    font-weight: 700
+    line-height: 20px
+    text-transform: uppercase
+    text-align: center
+
+  & input
+    width: 34px
+    height: 30px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    padding: 0 10px 0 10px
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+
+  & td
+    padding-bottom: 20px
+    border-bottom: 1px solid #eaeaea
+
+  &-text
+    color: #656565
+    font-size: 13px
+    font-weight: 400
+    line-height: 20px
+    text-transform: uppercase
+    text-align: center
+
+
+.product-details
+  width: 45%
+  text-align: left
+
+.container__cart-page
+  margin: 90px auto 80px auto
+
+.shopping-cart-product
+  padding-top: 20px
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  & img
+    margin-right: 20px
+
+  & h5
+    color: #222222
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+    margin-bottom: 38px
+
+  & p
+    color: #575757
+    font-size: 13px
+
+  & span
+    color: #6f6e6e
+    margin-left: 5px
+    font-weight: 300
+
+  & i
+    width: 15px
+    height: 15px
+    color: #c0c0c0
+    font-size: 16px
+    font-weight: 400
+    text-transform: uppercase
+
+.input_quantity
+  height: 138px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.product-del-button
+  height: 78px
+  display: flex
+  justify-content: center
+
+.button__shopping-cart-action
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  width: 235px
+  height: 50px
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  display: flex
+  justify-content: center
+  align-items: center
+
+  &-wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: 44px 0 63px 0
+
+.shipping-address
+  height: 268px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+
+.shopping-cart-bottom
+  display: flex
+  justify-content: space-between
+  flex-basis: auto
+
+  & h4
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+  & input,
+  & select
+    padding-left: 10px
+    padding-right: 10px
+    width: 100%
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #b1b1b1
+    font-size: 13px
+    font-weight: 300
+
+    &[type="button"]
+      cursor: pointer
+      width: 100px
+      height: 35px
+      border: 1px solid #eaeaea
+      background-color: #ffffff
+      color: #4a4a4a
+      font-size: 11px
+      font-weight: 700
+      text-transform: uppercase
+
+.shipping-address,
+.coupon,
+.total
+  width: calc(100% / 3)
+  padding-right: 50px
+
+
+.coupon
+  & input[type="button"]
+    width: 118px
+
+
+.coupon_margin
+  margin-top: 25px
+
+  & a
+    margin-top: 25px
+
+  &:first-child
+    margin-top: 0
+
+.total
+  background-color: #f5f3f3
+  height: 215px
+
+  &-wrapper
+    padding: 40px 0 40px 40px
+
+.subtotal
+  margin-bottom: 15px
+  text-align: right
+  color: #4a4a4a
+  font-size: 11px
+  font-weight: 400
+  text-transform: uppercase
+
+.grand-total_black
+  text-align: right
+  color: #222222
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+  padding-bottom: 22px
+  border-bottom: 1px solid #e2e2e2
+
+.grand-total_rose
+  color: #f16d7f
+
+.button__checkout
+  margin-top: 17px !important
+  height: 50px !important
+  width: 100% !important
+  background-color: #f16d7f !important
+  color: #ffffff !important
+  font-size: 16px !important
+  font-weight: 700 !important
+  text-transform: uppercase !important
+
+.cart_drop
+  display: flex
+
+.cart-drop-wrapper:hover .cart_drop
+  display: flex
