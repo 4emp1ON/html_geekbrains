@@ -134,11 +134,11 @@ h3
   margin-right: 26px
   position: relative
 
-  &_drop
-    display: none
-    width: 100px
-    height: 100px
-    position: absolute
+  //&_drop
+  //  display: none
+  //  width: 100px
+  //  height: 100px
+  //  position: absolute
 
 
   &-white
@@ -1350,7 +1350,106 @@ details[open] .category_icon::after
   text-transform: uppercase !important
 
 .cart_drop
-  display: flex
+  margin-top: 10px
+  display: none
+  position: absolute
+  width: 262px
+  flex-direction: column
+  padding-top: 0
+  padding-bottom: 20px
 
-.cart-drop-wrapper:hover .cart_drop
+  &_wrapper
+    position: absolute
+    padding: 84px 192px 10px 0px
+    margin-top: -80px
+
+.cart-drop-total
+  margin-top: 20px
+  margin-bottom: 32px
   display: flex
+  justify-content: space-between
+
+  &-text,
+  &-value
+    color: #222222
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+.cart-drop-wrapper
+  &:hover .cart_drop
+    display: flex
+
+.cart-drop-item
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: flex-start
+  align-items: center
+  padding: 15px 0
+  border-bottom: 1px solid #ededed
+
+.cart-drop-desc
+  margin-left: 15px
+  justify-self: flex-start
+
+  &_price
+    color: #f16d7f !important
+    font-size: 12px !important
+    font-weight: 400 !important
+    text-transform: uppercase
+
+  & ul
+    margin: 0
+
+  & li
+    line-height: 25px
+
+  &_header
+    color: #222222 !important
+    font-size: 12px !important
+    font-weight: 700 !important
+    text-transform: uppercase
+
+  &_rate-star
+    margin: auto
+    font-family: FontAwesome
+
+    &::after
+      color: #e4af48
+      content: "\f005\f005\f005\f005\f123"
+
+
+.correct_pointer_cart:before
+  left: auto
+  right: 278px
+
+
+.cart-drop-del
+  margin-left: auto
+  color: #c0c0c0
+
+  &::after
+    font-family: FontAwesome
+    content: ""
+
+.cart_checkout
+  border: 1px solid #f16d7f
+  background-color: #ffffff
+  color: #f16d7f
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 20px 0
+  cursor: pointer
+
+.cart_go-to-cart
+  border: 1px solid #eaeaea
+  background-color: #ffffff
+  color: #4a4a4a
+  font-size: 14px
+  font-weight: 700
+  text-transform: uppercase
+  padding: 20px 0
+  margin-top: 10px
+  cursor: pointer
