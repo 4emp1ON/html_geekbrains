@@ -1,3 +1,7 @@
+$rose_main: #f16d7f
+$black_main: #222222
+$container-width: 1140px
+
 
 *
   margin: 0
@@ -17,7 +21,7 @@ a
 
 h1
   text-transform: capitalize
-  color: #222222
+  color: $black_main
   font-size: 30px
   font-weight: 700
 
@@ -29,7 +33,7 @@ h3
 
 
 .container
-  width: 1140px
+  width: $container_width
   margin: 0 auto
 
 
@@ -54,7 +58,7 @@ h3
     align-items: center
 
   &__browse
-    color: #222222
+    color: $black_main
     border-radius: 3px 0 0 3px
     border: 1px solid #e6e6e6
     background-color: #cdcdcc
@@ -89,7 +93,7 @@ h3
 
 
 .rose_button
-  background-color: #f16d7f
+  background-color: $rose_main
   padding: 10px 12px 10px 19px
   color: #ffffff
   font-size: 15px
@@ -152,7 +156,7 @@ h3
   background-color: #ffffff
 
   &__link
-    color: #222222
+    color: $black_main
     font-size: 14px
     font-weight: 700
     text-transform: uppercase
@@ -170,7 +174,7 @@ h3
     right: -150px
 
     &::before
-      left: auto
+      left: auto !important
       right: 200px
 
 .drop
@@ -184,6 +188,8 @@ h3
   display: none
   flex-direction: row
   justify-content: space-between
+  z-index: 3
+
 
   &::before
     content: ""
@@ -235,11 +241,11 @@ h3
     align-items: center
 
   &__content
-    border-left: 12px solid #f16d7f
+    border-left: 12px solid $rose_main
     padding-left: 12px
 
   &__text
-    color: #222222
+    color: $black_main
     font-size: 40px
     font-weight: 900
     text-transform: uppercase
@@ -252,7 +258,7 @@ h3
 
 
 .pink
-  color: #f16d7f
+  color: $rose_main
   font-weight: 900
 
   &-deal
@@ -307,16 +313,19 @@ h3
 .item
   margin-top: 60px
 
+  & img
+    transition: .5s
+
   &-name
     margin: 20px 0 17px 14px
-    color: #222222
+    color: $black_main
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
 
   &-cost
     margin-left: 14px
-    color: #f16d7f
+    color: $rose_main
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
@@ -338,6 +347,10 @@ h3
 
   &:hover .item-image-hover
     display: block
+    transform: scale(1.07)
+
+  &:hover img
+    transform: scale(1.07)
 
 
 .add-to-cart-hover
@@ -457,7 +470,7 @@ h3
   flex-direction: row
   justify-content: center
   height: 100%
-  width: 1140px
+  width: $container_width
 
 
 .sub__wrapper
@@ -531,19 +544,18 @@ h3
   font-size: 14px
   margin-bottom: 35px
 
-
-input[type="email"]
+.subscribe input[type="email"]
   border-radius: 23px 0 0 23px
   background-color: #e1e1e1
   width: 254px
   height: 46px
   border: 0
   padding-left: 28px
-  padding-right: 28px
+  padding-right: 28pxf
 
 .submit-button
   border-radius: 0 23px 23px 0
-  background-color: #f16d7f
+  background-color: $rose_main
   padding: 14px 20px 15px 21px
   border: 0
   //margin-left: -52px
@@ -576,7 +588,7 @@ input[type="email"]
 
 
 .switching-line:hover
-  background-color: #f16d7f
+  background-color: $rose_main
   cursor: pointer
 
 
@@ -605,7 +617,7 @@ footer nav
 
 
 footer h2
-  color: #f16d7f
+  color: $rose_main
   font-size: 18px
   font-weight: 700
   text-transform: uppercase
@@ -665,18 +677,18 @@ footer h2
 
 
 .icons-right-side i:hover
-  background-color: #f16d7f
+  background-color: $rose_main
   color: #f7f7f8
 
 
 .page_header_left
-  color: #f16d7f
+  color: $rose_main
   font-size: 24px
   font-weight: 700
   text-transform: uppercase
 
 .actual_breadcrumb
-  color: #f16d7f
+  color: $rose_main
   font-size: 14px
   font-weight: 700
 
@@ -742,7 +754,7 @@ footer h2
     align-items: center
 
     &_rose_head
-      color: #f16d7f
+      color: $rose_main
       font-size: 14px
       font-weight: 700
       line-height: 24px
@@ -850,7 +862,7 @@ footer h2
         &::placeholder
           font-size: 13px
           font-weight: 400
-          padding-left: 15px
+          //padding-left: 15px
           color: #bcbcbc
 
       &_color_header
@@ -1149,7 +1161,7 @@ details[open] .category_icon::after
   width: 100%
 
   & thead
-    color: #222222
+    color: $black_main
     font-size: 13px
     font-weight: 700
     line-height: 20px
@@ -1196,7 +1208,7 @@ details[open] .category_icon::after
     margin-right: 20px
 
   & h5
-    color: #222222
+    color: $black_main
     font-size: 13px
     font-weight: 400
     text-transform: uppercase
@@ -1231,6 +1243,12 @@ details[open] .category_icon::after
   display: flex
   justify-content: center
 
+  & i
+    transition: .5s
+
+    &:hover
+      color: red
+
 .button__shopping-cart-action
   color: #4a4a4a
   font-size: 14px
@@ -1263,7 +1281,7 @@ details[open] .category_icon::after
   flex-basis: auto
 
   & h4
-    color: #222222
+    color: $black_main
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
@@ -1329,7 +1347,7 @@ details[open] .category_icon::after
 
 .grand-total_black
   text-align: right
-  color: #222222
+  color: $black_main
   font-size: 16px
   font-weight: 700
   text-transform: uppercase
@@ -1337,13 +1355,13 @@ details[open] .category_icon::after
   border-bottom: 1px solid #e2e2e2
 
 .grand-total_rose
-  color: #f16d7f
+  color: $rose_main
 
 .button__checkout
   margin-top: 17px !important
   height: 50px !important
   width: 100% !important
-  background-color: #f16d7f !important
+  background-color: $rose_main !important
   color: #ffffff !important
   font-size: 16px !important
   font-weight: 700 !important
@@ -1371,7 +1389,7 @@ details[open] .category_icon::after
 
   &-text,
   &-value
-    color: #222222
+    color: $black_main
     font-size: 16px
     font-weight: 700
     text-transform: uppercase
@@ -1394,7 +1412,7 @@ details[open] .category_icon::after
   justify-self: flex-start
 
   &_price
-    color: #f16d7f !important
+    color: $rose_main !important
     font-size: 12px !important
     font-weight: 400 !important
     text-transform: uppercase
@@ -1406,7 +1424,7 @@ details[open] .category_icon::after
     line-height: 25px
 
   &_header
-    color: #222222 !important
+    color: $black_main !important
     font-size: 12px !important
     font-weight: 700 !important
     text-transform: uppercase
@@ -1434,9 +1452,9 @@ details[open] .category_icon::after
     content: ""
 
 .cart_checkout
-  border: 1px solid #f16d7f
+  border: 1px solid $rose_main
   background-color: #ffffff
-  color: #f16d7f
+  color: $rose_main
   font-size: 14px
   font-weight: 700
   text-transform: uppercase
@@ -1453,3 +1471,123 @@ details[open] .category_icon::after
   padding: 20px 0
   margin-top: 10px
   cursor: pointer
+
+.fa-times-circle
+  transition: 0.5s
+
+  &:hover
+    color: red
+    transform: scale(1.2)
+
+.active-item-wrapper
+  padding: 90px 0 80px 0
+  border-bottom: 1px solid #e8e8e8
+
+.checkout
+  margin-bottom: 90px
+  &__left
+    min-width: 50%
+
+  &__right
+    min-width: 50%
+
+  & h4
+    margin-left: 35px
+    margin-top: 35px
+    color: $black_main
+    font-size: 13px
+    font-weight: 400
+    text-transform: uppercase
+
+  & fieldset
+    border: none
+
+  & legend
+    margin-bottom: 40px
+    color: $black_main
+    font-size: 16px
+    font-weight: 700
+    text-transform: uppercase
+
+  & p
+    margin-left: 35px
+    color: $black_main
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+
+  & i
+    margin-right: 3px
+
+  & input[type="radio"]
+    margin: 30px 15px 0 0
+
+  & input[type="submit"]
+    margin: 35px auto auto 35px
+    width: 180px
+    height: 50px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+    color: #4a4a4a
+    font-size: 14px
+    font-weight: 700
+    text-transform: uppercase
+    cursor: pointer
+
+  & input[type="email"],
+  & input[type="password"]
+    margin-top: 16px
+    width: 390px
+    height: 45px
+    border: 1px solid #eaeaea
+    background-color: #ffffff
+
+  & label p
+    color: $black_main
+    font-size: 12px
+    font-weight: 400
+    text-transform: uppercase
+    margin-top: 27px
+    margin-bottom: 16px
+
+.text-gray
+  color: #b3b2b2 !important
+  font-size: 13px !important
+  text-transform: none !important
+  margin-top: 15px
+
+  &:first-letter
+    text-transform: uppercase
+
+  &_benefits-margin
+    margin-top: 33px
+
+.text-red
+  margin-top: 18px
+  color: #ff0d0d !important
+  font-size: 13px !important
+  font-weight: 400 !important
+  line-height: 20px !important
+  text-transform: none !important
+
+.active-item-wrapper
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.input-labels
+  margin-top: 23px
+
+.inactive-item-wrapper
+  padding: 33px 0
+  border-bottom: 1px solid #e8e8e8
+  color: $black_main
+  font-size: 16px
+  font-weight: 700
+  text-transform: uppercase
+
+.forgot-password
+  margin-left: 32px
+  color: $black_main
+  font-size: 14px
+  font-weight: 400

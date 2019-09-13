@@ -3,7 +3,6 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -85,9 +84,48 @@
             </form>
         </div>
         <div class="header__right">
-            <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
-            <div class="cart_drop">
-                3333
+            <div class="cart-drop-wrapper">
+                <a href="#"><img class="cart" src="img/cart.svg" alt="cart"></a>
+                <div class="cart_drop_wrapper">
+                    <div class="drop cart_drop correct_pointer_cart">
+                        <div class="cart-drop-item">
+                            <div class="cart-drop-img">
+                                <img src="img/incart-men.jpg" alt="Cool t-shirt">
+                            </div>
+                            <div class="cart-drop-desc">
+                                <ul>
+                                    <li class="cart-drop-desc_header">Rebox Zane</li>
+                                    <li class="cart-drop-desc_rate-star"></li>
+                                    <li class="cart-drop-desc_price">1 x $250</li>
+                                </ul>
+                            </div>
+                            <div class="cart-drop-del">
+                                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="cart-drop-item">
+                            <div class="cart-drop-img">
+                                <img src="img/incart-men.jpg" alt="Cool t-shirt">
+                            </div>
+                            <div class="cart-drop-desc">
+                                <ul>
+                                    <li class="cart-drop-desc_header">Rebox Zane</li>
+                                    <li class="cart-drop-desc_rate-star"></li>
+                                    <li class="cart-drop-desc_price">1 x $250</li>
+                                </ul>
+                            </div>
+                            <div class="cart-drop-del">
+                                <a href="#"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="cart-drop-total">
+                            <div class="cart-drop-total-text">TOTAL</div>
+                            <div class="cart-drop-total-value">$500.00</div>
+                        </div>
+                        <input type="button" class="cart_checkout" value="checkout">
+                        <input type="button" class="cart_go-to-cart" value="go to cart">
+                    </div>
+                </div>
             </div>
             <a href="#">
                 <ul class="rose_button">
@@ -100,7 +138,7 @@
 </header>
 <nav class="container">
     <ul class="menu">
-        <li class="menu__list"><a href="/index.html" class="menu__link">Home</a></li>
+        <li class="menu__list"><a href="index.html" class="menu__link">Home</a></li>
         <li class="menu__list">
             <a href="#" class="menu__link">Man</a>
             <div class="drop">
@@ -646,454 +684,74 @@
                 New Arrivals
             </div>
             <div class="page_header_breadcrumbs">
-                <p><a href="#">Home</a> / <a href="">Men</a> / <span class="actual_breadcrumb">New Arrivals</span>
+                <p><a href="index.html">Home</a> / <a href="">Men</a> / <span class="actual_breadcrumb">New Arrivals</span>
                 </p>
             </div>
         </div>
     </div>
 </header>
 
-<div class="product_content container">
-    <div class="product_content_left_menu_wrapper">
-        <nav>
-            <details open>
-                <summary>
-                    <div class="category_wrapper">
-                        <!-- <div class="vertical_line"></div> -->
-                        <div class="category_name">Category</div>
-                        <div class="category_icon"></div>
-                    </div>
-                </summary>
-                <ul class="product_content_menu_items">
-                    <a href="#">
-                        <li>Accessories</li>
-                    </a>
-                    <a href="#">
-                        <li>Bags</li>
-                    </a>
-                    <a href="#">
-                        <li>Denim</li>
-                    </a>
-                    <a href="#">
-                        <li>Hoodies & Sweatshirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Jackets & Coats</li>
-                    </a>
-                    <a href="#">
-                        <li>Pants</li>
-                    </a>
-                    <a href="#">
-                        <li>Polos</li>
-                    </a>
-                    <a href="#">
-                        <li>Shirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Shoes</li>
-                    </a>
-                    <a href="#">
-                        <li>Shorts</li>
-                    </a>
-                    <a href="#">
-                        <li>Sweaters & Knits</li>
-                    </a>
-                    <a href="#">
-                        <li>T-Shirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Tanks</li>
-                    </a>
-                </ul>
-            </details>
-            <details>
-                <summary>
-                    <div class="category_wrapper">
-                        <!-- <div class="vertical_line"></div> -->
-                        <div class="category_name">BRAND</div>
-                        <div class="category_icon"></div>
-                    </div>
-                </summary>
-                <ul class="product_content_menu_items">
-                    <a href="#">
-                        <li>Accessories</li>
-                    </a>
-                    <a href="#">
-                        <li>Bags</li>
-                    </a>
-                    <a href="#">
-                        <li>Denim</li>
-                    </a>
-                    <a href="#">
-                        <li>Hoodies & Sweatshirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Jackets & Coats</li>
-                    </a>
-                    <a href="#">
-                        <li>Pants</li>
-                    </a>
-                    <a href="#">
-                        <li>Polos</li>
-                    </a>
-                    <a href="#">
-                        <li>Shirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Shoes</li>
-                    </a>
-                    <a href="#">
-                        <li>Shorts</li>
-                    </a>
-                    <a href="#">
-                        <li>Sweaters & Knits</li>
-                    </a>
-                    <a href="#">
-                        <li>T-Shirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Tanks</li>
-                    </a>
-                </ul>
-            </details>
-            <details>
-                <summary>
-                    <div class="category_wrapper">
-                        <!-- <div class="vertical_line"></div> -->
-                        <div class="category_name">dESIGNER</div>
-                        <div class="category_icon"></div>
-                    </div>
-                </summary>
-                <ul class="product_content_menu_items">
-                    <a href="#">
-                        <li>Accessories</li>
-                    </a>
-                    <a href="#">
-                        <li>Bags</li>
-                    </a>
-                    <a href="#">
-                        <li>Denim</li>
-                    </a>
-                    <a href="#">
-                        <li>Hoodies & Sweatshirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Jackets & Coats</li>
-                    </a>
-                    <a href="#">
-                        <li>Pants</li>
-                    </a>
-                    <a href="#">
-                        <li>Polos</li>
-                    </a>
-                    <a href="#">
-                        <li>Shirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Shoes</li>
-                    </a>
-                    <a href="#">
-                        <li>Shorts</li>
-                    </a>
-                    <a href="#">
-                        <li>Sweaters & Knits</li>
-                    </a>
-                    <a href="#">
-                        <li>T-Shirts</li>
-                    </a>
-                    <a href="#">
-                        <li>Tanks</li>
-                    </a>
-                </ul>
-            </details>
-        </nav>
-
+<div class="checkout container">
+    <div class="active-item-wrapper">
+        <div class="checkout__left">
+            <form action="#">
+                <fieldset>
+                    <legend>01. Shipping Address</legend>
+                    <h4>Check as a guest or register</h4>
+                    <p class="text-gray">Register with us for future convenience</p>
+                    <p><input type="radio" value="guest">checkout as guest</p>
+                    <p><input type="radio" value="register">register</p>
+                    <h4>register and save time!</h4>
+                    <p class="text-gray">register with us for future convenience</p>
+                    <p class="text-gray text-gray_benefits-margin"><i class="fa">&#xf101;</i>Fast and easy checkout</p>
+                    <p class="text-gray"><i class="fa">&#xf101;</i>Easy access to your order history and status</p>
+                    <input type="submit" value="Continue">
+                </fieldset>
+            </form>
+        </div>
+        <div class="checkout__right">
+            <form action="#">
+                <fieldset>
+                    <legend>&nbsp;</legend>
+                    <h4>Already registed?</h4>
+                    <p class="text-gray">Please log in below</p>
+                    <p class="input-labels">EMAIL ADDRESS <span class="text-red">*</span><br>
+                        <input type="email" name="login">
+                    </p>
+                    <p class="input-labels">PASSWORD <span class="text-red">*</span> <br>
+                        <input type="password" name="password"></p>
+                    <p class="text-red">* Required Fileds</p>
+                    <input type="submit" value="Log in"><a href="#"><span class="forgot-password">Forgot Password ?</span></a>
+                </fieldset>
+            </form>
+        </div>
     </div>
-    <div class="product_content_right_side">
-        <div class="goods_custom">
-            <div class="goods_custom_trending">
-                <h4>Trending now</h4>
-                <ul class="goods_custom_trending_selector">
-                    <li>Bohemian</li>
-                    <li>Floral</li>
-                    <li>Lace</li>
-                    <li>Floral</li>
-                    <li>Lace</li>
-                    <li>Bohemian</li>
-                </ul>
-            </div>
-            <div class="goods_custom_size">
-                <h4>SIZE</h4>
-                <ul class="goods_custom_size_selector">
-                    <li>
-                        <input type="checkbox" name="XXS" id="XXS">
-                        <label for="XXS">XXS</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="XS" id="XS">
-                        <label for="XS">XS</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="S" id="S">
-                        <label for="S">S</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="M" id="M">
-                        <label for="M">M</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="L" id="L">
-                        <label for="L">L</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="XL" id="XL">
-                        <label for="XL">XL</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="XXL" id="XXL">
-                        <label for="XXL">XXL</label>
-                    </li>
-                </ul>
-            </div>
-            <div class="goods_custom_price">
-                <h4>pRICE</h4>
-                <div class="goods_custom_price_selector">
-                    <div>
-                        <input type="range" name="" id="">
-                    </div>
-                    <div>
-                        <ul class="price_range">
-                            <li>$52</li>
-                            <li>$400</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <div class="inactive-item-wrapper">
+        <div class="billing-info">
+            02.   BILLING INFORMATION
         </div>
-        <div class="goods_sorting">
-            <div class="sort_wrapper">
-                <label for="sort_by">Sort By</label>
-                <select name="sort_by" id="sort_by">
-                    <option value="Name">Name</option>
-                </select>
-            </div>
-            <div class="sort_wrapper">
-                <label for="Show_elements">Show</label>
-                <select name="Show_elements" id="Show_elements">
-                    <option value="Show">09</option>
-                </select>
-            </div>
+    </div>
+    <div class="inactive-item-wrapper">
+        <div class="shipping-info">
+            03.   SHIPPING INFORMATION
         </div>
-        <div class="product_content_goods">
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
-            <div class="item">
-                <ul>
-                    <li class="item-image"><img src="img/items/Item1.jpg" alt="Mango  People  T-shirt">
-                        <div class="item-image-hover">
-                            <a href="#">
-                                <ul class="add-to-cart-hover">
-                                    <li><img class="cart-white" src="img/cart_white.svg" alt="cart"></li>
-                                    <li>Add to Cart</li>
-                                </ul>
-                            </a>
-                        </div>
-                    </li>
-                    <li class="item-name"><a href="singlePage.html"> Mango People T-shirt </a></li>
-                    <li class="item-cost">$52.00</li>
-                </ul>
-            </div>
+    </div>
+    <div class="inactive-item-wrapper">
+        <div class="shipping-method">
+            04.   SHIPPING METHOD
         </div>
-        <div class="product-block-footer">
-            <div class="page-switcher-wrapper">
-                <ul class="page-switcher"><a href="#">
-                    <li><i class="fa fa-chevron-left" aria-hidden="true"></i></li>
-                </a><a href="#">
-                    <li>1</li>
-                </a><a href="#">
-                    <li>2</li>
-                </a><a href="#">
-                    <li>3</li>
-                </a><a href="#">
-                    <li>4</li>
-                </a><a href="#">
-                    <li>5</li>
-                </a>
-                    <li><a href="#">6</a><a href="#">....</a><a href="#">20</a></li>
-                    </a><a href="#" class="page-switcher__arrow">
-                        <li><i class="fa fa-chevron-right" aria-hidden="true"></i></li>
-                    </a></ul>
-            </div>
-            <a href="#"><div class="view-all-btn">
-                View All
-            </div></a>
+    </div>
+    <div class="inactive-item-wrapper">
+        <div class="payment-method">
+            05.   PAYMENT METHOD
+        </div>
+    </div>
+    <div class="inactive-item-wrapper">
+        <div class="order-review">
+            06.   ORDER REVIEW
         </div>
     </div>
 </div>
-<div class="benefit-wrapper">
-    <div class="benefit benefit__product-page">
-        <ul>
-            <li class="benefit-icon">
-                <img src="img/Truck.svg" alt="Free Delivery">
-            </li>
-            <li class="benefit-description-header">Free Delivery</li>
-            <li class="benefit-description-text">Worldwide delivery on all. Authoritatively morph
-                next-generation innovation with extensive models.
-            </li>
-        </ul>
-    </div>
-    <div class="benefit benefit__product-page">
-
-            <ul>
-                <li class="benefit-icon">
-                    <img src="img/Sale.svg" alt="Sales & discountsy">
-                </li>
-                <li class="benefit-description-header">Free Delivery</li>
-                <li class="benefit-description-text">Worldwide delivery on all. Authoritatively morph
-                    next-generation innovation with extensive models.
-                </li>
-            </ul>
-    </div>
-    <div class="benefit benefit__product-page">
-
-            <ul>
-                <li class="benefit-icon">
-                    <img src="img/Crown.svg" alt="Free Delivery">
-                </li>
-                <li class="benefit-description-header">Quality assurance</li>
-                <li class="benefit-description-text">Worldwide delivery on all. Authoritatively morph
-                    next-generation innovation with extensive models.
-                </li>
-            </ul>
-    </div>
-</div>
-
 
 <div class="subscribe">
     <div class="sub__prewrapper">
@@ -1117,9 +775,9 @@
             </div>
             <div class="sub-right">
                 <p class="sub-header">Subscribe</p>
-                <p class="sub-text">FOR OUR NEWSLETTER AND PROMOTION</p>
+                <p class="sub-text">FOR OUR NEWLETTER AND PROMOTION</p>
                 <form class="sub-form" action="#">
-                    <input type="email" size="10" placeholder="Enter Your Email">
+                    <input type="email" placeholder="Enter Your Email">
                     <input type="submit" value="Subscribe" class="submit-button">
                 </form>
 
@@ -1155,7 +813,7 @@
     <nav class="company">
         <h2>COMPANY</h2>
         <ul>
-            <a href="/index.html">
+            <a href="index.html">
                 <li>Home</li>
             </a>
             <a href="#">
