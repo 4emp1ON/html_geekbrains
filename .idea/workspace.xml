@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f76efd1c-4978-4dca-b11e-5ca266f9544f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shoppingCart.html" afterDir="false" />
@@ -95,6 +97,12 @@
       <workItem from="1568193413303" duration="12087000" />
       <workItem from="1568358124219" duration="54000" />
       <workItem from="1568358222113" duration="3270000" />
+      <workItem from="1568440942707" duration="879000" />
+      <workItem from="1568529513429" duration="397000" />
+      <workItem from="1568534324595" duration="4000" />
+      <workItem from="1568568591770" duration="218000" />
+      <workItem from="1568646757977" duration="689000" />
+      <workItem from="1568654201723" duration="4876000" />
     </task>
     <servers />
   </component>

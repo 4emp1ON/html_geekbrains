@@ -551,7 +551,7 @@ h3
   height: 46px
   border: 0
   padding-left: 28px
-  padding-right: 28pxf
+  padding-right: 28px
 
 .submit-button
   border-radius: 0 23px 23px 0
@@ -739,7 +739,7 @@ footer h2
 
 
 .order
-  height: 730px
+  min-height: 730px
   border: 1px solid #eaeaea
   background-color: #ffffff
   margin-top: -75px
@@ -892,6 +892,7 @@ footer h2
   flex-direction: row
   justify-content: center
   align-items: center
+  margin-bottom: 120px
 
   & img
     margin-right: 15px
@@ -953,21 +954,24 @@ details summary::-webkit-details-marker
 .category_icon
   // margin-left: auto
   color: #ef5b70
-  font-family: FontAwesome
+  font-family: FontAwesome, sans-serif
 
   &::after
     content: "\f0d8"
+    font-size: 14px
 
 details[open] .category_icon::after
   content: "\f0d7"
+  font-size: 14px
 
 .category_name
-  margin-left: 11px
+  padding-left: 11px
   color: #ef5b70
   font-size: 14px
   font-weight: 700
   line-height: 20px
   text-transform: uppercase
+  font-family: "Lato", sans-serif
 
 .product_content_right_side
   width: 100%
@@ -1378,7 +1382,7 @@ details[open] .category_icon::after
 
   &_wrapper
     position: absolute
-    padding: 84px 192px 10px 0px
+    padding: 84px 192px 10px 0
     margin-top: -80px
 
 .cart-drop-total
@@ -1431,7 +1435,7 @@ details[open] .category_icon::after
 
   &_rate-star
     margin: auto
-    font-family: FontAwesome
+    font-family: FontAwesome, sans-serif
 
     &::after
       color: #e4af48
@@ -1448,7 +1452,7 @@ details[open] .category_icon::after
   color: #c0c0c0
 
   &::after
-    font-family: FontAwesome
+    font-family: FontAwesome, sans-serif
     content: ""
 
 .cart_checkout
@@ -1485,6 +1489,7 @@ details[open] .category_icon::after
 
 .checkout
   margin-bottom: 90px
+
   &__left
     min-width: 50%
 
@@ -1591,3 +1596,90 @@ details[open] .category_icon::after
   color: $black_main
   font-size: 14px
   font-weight: 400
+
+@-webkit-keyframes scale-up-ver-top
+  0%
+    -webkit-transform: scaleY(0.4)
+    transform: scaleY(0.4)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+
+  100%
+    -webkit-transform: scaleY(1)
+    transform: scaleY(1)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+
+
+@keyframes scale-up-ver-top
+  0%
+    -webkit-transform: scaleY(0.4)
+    transform: scaleY(0.4)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+
+  100%
+    -webkit-transform: scaleY(1)
+    transform: scaleY(1)
+    -webkit-transform-origin: 100% 0
+    transform-origin: 100% 0
+
+.scale-up-ver-top
+  -webkit-animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+  animation: scale-up-ver-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+
+@-webkit-keyframes shadow-pop-tl
+  0%
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e
+    -webkit-transform: translateX(0) translateY(0)
+    transform: translateX(0) translateY(0)
+
+  100%
+    -webkit-box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e
+    box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e
+    -webkit-transform: translateX(8px) translateY(8px)
+    transform: translateX(8px) translateY(8px)
+
+
+@keyframes shadow-pop-tl
+  0%
+    -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e
+    box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e
+    -webkit-transform: translateX(0) translateY(0)
+    transform: translateX(0) translateY(0)
+
+  100%
+    -webkit-box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e
+    box-shadow: -1px -1px #3e3e3e, -2px -2px #3e3e3e, -3px -3px #3e3e3e, -4px -4px #3e3e3e, -5px -5px #3e3e3e, -6px -6px #3e3e3e, -7px -7px #3e3e3e, -8px -8px #3e3e3e
+    -webkit-transform: translateX(8px) translateY(8px)
+    transform: translateX(8px) translateY(8px)
+
+.shadow-pop-tl:hover
+  -webkit-animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both
+  animation: shadow-pop-tl 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) both
+
+
+@-webkit-keyframes shadow-drop-center
+  0%
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+
+  100%
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+
+
+@keyframes shadow-drop-center
+  0%
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0)
+
+  100%
+    -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.35)
+
+
+.shadow-drop-center:hover
+  -webkit-animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+  animation: shadow-drop-center 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
